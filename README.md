@@ -1,6 +1,6 @@
 # Code_Wars_Katas
 
-Collection of my CodeWars solutions
+Collection of my CodeWars solutions | [My CW Profile](https://www.codewars.com/users/sPesce)
 
 ### Javascript:
 
