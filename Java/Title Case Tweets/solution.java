@@ -1,11 +1,10 @@
 import java.lang.*;
 public class JadenCase {
-    //Title case string
     public String toJadenCase(String phrase) {
         if(phrase == null||phrase.isEmpty()||phrase.isBlank())
             return null;
         
-        int len = phrase.length();
+        final int len = phrase.length();
         char[] chars = new char[len];
         chars[0] = Character.toUpperCase(phrase.charAt(0));
         
