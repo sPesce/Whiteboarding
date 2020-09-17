@@ -8,14 +8,13 @@ public class Accumul {
     for(int i = 0; i < s.length(); i++)
     {
       final char current = s.charAt(i);
-      
       char[] outpChars = new char[i+1];
+      //fill with lowercase, but make [0] uppercase
       Arrays.fill(outpChars,Character.toLowerCase(current));
       outpChars[0] = Character.toUpperCase(current);
       
       acc[i] = new String(outpChars);
     }
-    
     return String.join("-",acc);
   }
 }
