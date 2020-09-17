@@ -12,4 +12,4 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
 ### Java:
 
 - Title Case: [solution](Java/Solutions/src/JadenCase.java) | [kata](https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/java)
-- String Accumulator: [solution](Java/Solutions/src/Accumul.java)
+- String Accumulator: [solution](Java/Solutions/src/Accumul.java) | [kata](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java)
