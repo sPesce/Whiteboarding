@@ -3,20 +3,17 @@ public class Accumul {
     
   public static String accum(String s) {
     
-    final char[] letters = s.toCharArray();
     String[] acc = new String[s.length()];
 
-    for(int i = 0; i < letters.length; i++)
+    for(int i = 0; i < s.length(); i++)
     {
-      StringBuilder sb = new StringBuilder();
-      sb.append(Character.toUpperCase(letters[i]));
-
+      final char current = s.charAt(i);
       
-      char[] repeat = new char[i];
-      Arrays.fill(repeat,Character.toLowerCase(letters[i]));
-      sb.append(repeat);
+      char[] outpChars = new char[i+1];
+      Arrays.fill(outpChars,Character.toLowerCase(current));
+      outpChars[0] = Character.toUpperCase(current);
       
-      acc[i] = sb.toString();
+      acc[i] = new String(outpChars);
     }
     
     return String.join("-",acc);
