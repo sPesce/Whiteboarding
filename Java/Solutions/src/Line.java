@@ -40,8 +40,6 @@ public class Line {
             if(userBalance != 0)
                  valid = "NO";
         }
-        
         return valid;
-    
   }
 }
