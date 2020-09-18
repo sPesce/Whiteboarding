@@ -15,7 +15,6 @@ public class Accumul {
       
       acc[i] = new String(outpChars);
     }
-    
     return String.join("-",acc);
   }
 }
