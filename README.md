@@ -3,11 +3,61 @@
 Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars.com/users/sPesce)
 
 ### Javascript:
+<table>
 
-- Sum Consecutive: [solution](Javascript/Beginner%20Series%20%233%20Sum%20of%20Numbers/solution.js) | [kata](https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript)
-- Population Growth: [solution](Javascript/%20Growth%20of%20a%20Population/solution.js) | [kata](https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript)
-- Disemvowel Trolls: [solution](Javascript/Disemvowel%20Trolls/solution.js) | [kata](https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript)
-- Is Valid Walk: [solution](Javascript/Is%20Valid%20Walk/solution.js) | [kata](https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript) 
+  <tr>
+    <td><strong>Sum Consecutive</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Beginner%20Series%20%233%20Sum%20of%20Numbers/solution.js">
+      solution</a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript">
+      kata
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Population Growth</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/%20Growth%20of%20a%20Population/solution.js">
+      solution</a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript">
+      kata
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Disemvowel Trolls</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Disemvowel%20Trolls/solution.js">
+      solution</a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript">
+      kata
+      </a>
+    </td>
+  </tr>
+
+  <tr>
+    <td><strong>Is Valid Walk</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Is%20Valid%20Walk/solution.js">
+      solution</a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript">
+      kata
+      </a>
+    </td>
+  </tr>
+
+</table>
 
 ### Java:
 <table>
