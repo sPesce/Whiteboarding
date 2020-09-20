@@ -13,3 +13,6 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
 
 - Title Case: [solution](Java/Solutions/src/JadenCase.java) | [kata](https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/java)
 - String Accumulator: [solution](Java/Solutions/src/Accumul.java) | [kata](https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java)
+- Sort Odd In Place: [solution](Java/Solutions/src/SortOdd.java) | [kata](https://www.codewars.com/kata/578aa45ee9fd15ff4600090d)
+- Get Middle Char(s): [solution](Java/Solutions/src/MiddleChar.java) | [kata](https://www.codewars.com/kata/56747fd5cb988479af000028/train/java)
+- String ends with?: [solution](Java/Solutions/src/StringEndsWith.java) | [kata](https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/java)
