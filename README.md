@@ -139,5 +139,19 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
       </a>
     </td>
   </tr>
+
+<tr>
+  <td><strong>Valid Triangle?</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/TriangleTester.java">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/56606694ec01347ce800001b/train/java">
+      kata
+    </a>
+  </td>
+</tr>
     
 </table>
