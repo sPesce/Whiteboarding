@@ -61,6 +61,19 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
 
 ### Java:
 <table>
+  
+  <tr>
+    <td><strong>Reverse Polish Notation Calc.</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/RPN.java">
+      solution</a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/52f78966747862fc9a0009ae/train/java">
+      kata
+      </a>
+    </td>
+  </tr>
 
   <tr>
     <td><strong>Title Case</strong></td>
