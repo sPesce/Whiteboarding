@@ -1,21 +1,19 @@
 import java.util.*;
 class RPN {
-
   public static double evaluate(String expr) {
     if (expr.isEmpty()) return 0;
     
     int start = 0;
-    int space;
     
     Deque<Double> stack = new ArrayDeque<Double>();
     
     do
     {
-      space = expr.substring(start).indexOf(' ');
+      int space = expr.substring(start).indexOf(' ');
       int end = space == -1 ? expr.length() : start + space;
-      String current = expr.substring(start,end);
+      String current = expr.substring(start,end);//current number or operator
       if("+-*/".indexOf(current.charAt(0)) != -1)//check if current is operator
-      {
+      {//pop 2 and apply operation
         Double a = stack.pop();
         Double b = stack.pop();
         stack.push(operate(current.charAt(0),b,a)); 
@@ -24,12 +22,12 @@ class RPN {
       {
         stack.push(Double.parseDouble(current));
       }
-      start = end + 1;
+      start = end + 1;//start over at index after the space
     }while(start < expr.length());
     
     double result = stack.pop();
     
-    while(!stack.isEmpty())
+    while(!stack.isEmpty())//stack non-empty -> return greatest val
     {
       double current = stack.pop();
       result = current > result ? current : result;
@@ -49,5 +47,3 @@ class RPN {
     return opHash.get(operand);
   }
 }
-
-//"20 5 +"
