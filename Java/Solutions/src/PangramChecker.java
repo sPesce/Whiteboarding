@@ -1,20 +1,19 @@
-import java.util.*;
+import java.util.Hashtable;
 public class PangramChecker {
   public boolean check(String sentence){
     Hashtable<Character,Boolean> letterMap = new Hashtable<Character,Boolean>();
-    char[] sentArr = sentence.toCharArray();
+    int count = 0;
 
-    for(char letter : sentArr)
+    for(char letter : sentence.toCharArray())
     {
-      letterMap.put(Character.toLowerCase(letter) ,true);
+      final char lower = Character.toLowerCase(letter);
+      
+      if(!letterMap.containsKey(lower) && Character.isLetter(lower))
+      {
+        letterMap.put(lower ,true);
+        count++;
+      }
     }
-
-    for(char letter = 'a'; letter <= 'z' ; letter++)
-    {
-      if (!letterMap.containsKey(letter))
-        return false;
-    }
-    
-    return true;
+    return count == 26;
   }
 }
