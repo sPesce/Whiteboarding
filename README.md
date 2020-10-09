@@ -14,7 +14,7 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     </td>
     <td>
       <a href="https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -37,11 +37,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Disemvowel Trolls</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Disemvowel%20Trolls/solution.js">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -50,11 +51,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Is Valid Walk</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Is%20Valid%20Walk/solution.js">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -68,11 +70,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Reverse Polish Notation Calc.</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/RPN.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/52f78966747862fc9a0009ae/train/java">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -81,11 +84,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Title Case</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/JadenCase.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/java">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -94,11 +98,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>String Accumulator</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/Accumul.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -107,11 +112,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Sort Odd in Place</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/SortOdd.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/578aa45ee9fd15ff4600090d">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -120,11 +126,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Get Middle Char(s)</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/MiddleChar.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/56747fd5cb988479af000028/train/java">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -133,11 +140,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>String ends with?</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/StringEndsWith.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/java">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -146,11 +154,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Next Integral Square</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/NextSquare.java">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/56269eb78ad2e4ced1000013/train/java">
-      kata
+        kata
       </a>
     </td>
   </tr>
@@ -186,11 +195,12 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
   <td><strong>Is Panagram?</strong></td>
   <td>
     <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/PangramChecker.java">
-    solution</a>
+      solution
+    </a>
   </td>
   <td>
     <a href="https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/java">
-    kata
+      kata
     </a>
   </td>
 </tr>
