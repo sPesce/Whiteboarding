@@ -19,19 +19,6 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     </td>
   </tr>
 
-  <td><strong>Middle Sum Index</strong></td>
-  <td>
-    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/MiddleIndex.java">
-      solution
-    </a>
-  </td>
-  <td>
-    <a href="https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/java">
-      kata
-    </a>
-  </td>
-  </tr>
-
   <tr>
     <td><strong>Population Growth</strong></td>
     <td>
@@ -164,6 +151,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td>
       <a href="https://www.codewars.com/kata/56269eb78ad2e4ced1000013/train/java">
       kata
+      </a>
+    </td>
+  </tr>
+  
+  <tr>
+    <td><strong>Middle Sum Index</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/MiddleIndex.java">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/java">
+        kata
       </a>
     </td>
   </tr>
