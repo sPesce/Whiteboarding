@@ -194,5 +194,19 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     </a>
   </td>
 </tr>
+
+<tr>
+  <td><strong>Count Smileys</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/SmileFaces.java">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/583203e6eb35d7980400002a/train/java">
+      kata
+    </a>
+  </td>
+</tr>
     
 </table>

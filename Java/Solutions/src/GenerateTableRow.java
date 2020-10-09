@@ -12,16 +12,17 @@ public class GenerateTableRow {
   {
     String str = 
     "<tr>\n" +
-      "<td><strong>" + title + "</strong></td>\n" +
-      "<td>\n" +
-        "<a href=\"" + solutionUrl + "\">\n" +
-        "solution</a>\n" +
-      "</td>\n" +
-      "<td>\n" +
-        "<a href=\"" + kataUrl + "\">\n" +
-        "kata\n" +
-        "</a>\n" +
-      "</td>\n" +
+    "  <td><strong>" + title + "</strong></td>\n" +
+    "  <td>\n" +
+    "    <a href=\"" + solutionUrl + "\">\n" +
+    "      solution\n" +
+    "    </a>\n" +
+    "  </td>\n" +
+    "  <td>\n" +
+    "    <a href=\"" + kataUrl + "\">\n" +
+    "      kata\n" +
+    "    </a>\n" +
+    "  </td>\n" +
     "</tr>\n";
     return str;
   }
