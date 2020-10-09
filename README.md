@@ -166,5 +166,17 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     </a>
   </td>
 </tr>
+<tr>
+  <td><strong>Is Panagram?</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/PangramChecker.java">
+    solution</a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/java">
+    kata
+    </a>
+  </td>
+</tr>
     
 </table>
