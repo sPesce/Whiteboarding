@@ -9,7 +9,8 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     <td><strong>Sum Consecutive</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Beginner%20Series%20%233%20Sum%20of%20Numbers/solution.js">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript">
@@ -18,15 +19,29 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     </td>
   </tr>
 
+  <td><strong>Middle Sum Index</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/MiddleIndex.java">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/java">
+      kata
+    </a>
+  </td>
+  </tr>
+
   <tr>
     <td><strong>Population Growth</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/%20Growth%20of%20a%20Population/solution.js">
-      solution</a>
+        solution
+      </a>
     </td>
     <td>
       <a href="https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript">
-      kata
+        kata
       </a>
     </td>
   </tr>
