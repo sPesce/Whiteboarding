@@ -6,6 +6,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
 <table>
 
   <tr>
+    <td><strong>Expand Number</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/expandedNumberForm.js">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript">
+        kata
+      </a>
+    </td>
+  </tr>
+
+  <tr>
     <td><strong>Only N Repeats</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/onlyNRepeats.js">
