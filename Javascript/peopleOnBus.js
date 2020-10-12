@@ -1,3 +1,3 @@
 var number = function(busStops){
-  return busStops.reduce((solution,[enter,exit]) => {return solution + enter - exit},0);
+  return busStops.reduce((total,[enter,exit]) => total + enter - exit , 0 );
 }
