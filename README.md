@@ -61,7 +61,7 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
     </td>
   </tr>
 
-  <tr>
+<tr>
   <td><strong>Square Digits</strong></td>
   <td>
     <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/squareDigits.js">
@@ -70,6 +70,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
   </td>
   <td>
     <a href="https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript">
+      kata
+    </a>
+  </td>
+</tr>
+
+<tr>
+  <td><strong>In array</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/sortSubstrings.js">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/550554fd08b86f84fe000a58/solutions/javascript">
       kata
     </a>
   </td>
