@@ -1,3 +1,5 @@
+//only I allowed in subtractive form
+//this passes the tests on code wars
 function solution(roman){
   
   const romanArr = [...roman]  
@@ -13,7 +15,7 @@ function solution(roman){
 
   return romanArr.reduce((val,numR) => val + romanMap[numR],0);
 }
-
+//any smaller number before a larger number will be subracted
 function solution2(roman){
   const romanArr = [...roman].reverse();  
     const romanMap = {
@@ -27,13 +29,13 @@ function solution2(roman){
     }
   
     let highest = romanMap[romanArr[0]];
+    
     return romanArr.reduce((acc,numR) => {
       let current = romanMap[numR];
-      console.log(current);
-      if(current >= highest)
-        highest = current;
-      else
-        current *= -1;
+      
+      if(current >= highest) highest = current;
+      else current *= -1;
+
       return acc + current;
     },0);
   }

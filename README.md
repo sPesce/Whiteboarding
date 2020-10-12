@@ -131,6 +131,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
   </td>
 </tr>
 
+<tr>
+  <td><strong>Roman To Decimal</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/romanToDec.js">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/51b6249c4612257ac0000005/train/javascript">
+      kata
+    </a>
+  </td>
+</tr>
+
 </table>
 
 ### Java:
