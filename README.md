@@ -18,6 +18,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
       </a>
     </td>
   </tr>
+  
+  <tr>
+    <td><strong>People Remaining on Bus</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/peopleOnBus.js">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/javascript">
+        kata
+      </a>
+    </td>
+  </tr>
 
   <tr>
     <td><strong>Sum Consecutive</strong></td>
