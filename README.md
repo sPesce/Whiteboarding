@@ -145,6 +145,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
   </td>
 </tr>
 
+<tr>
+  <td><strong>Generate Hashtag</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/hashtagger.js">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript">
+      kata
+    </a>
+  </td>
+</tr>
+
 </table>
 
 ### Java:
