@@ -6,6 +6,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
 <table>
 
   <tr>
+    <td><strong>Only N Repeats</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/onlyNRepeats.js">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript">
+        kata
+      </a>
+    </td>
+  </tr>
+
+  <tr>
     <td><strong>Sum Consecutive</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/Beginner%20Series%20%233%20Sum%20of%20Numbers/solution.js">
