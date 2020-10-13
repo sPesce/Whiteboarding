@@ -173,6 +173,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
   </td>
 </tr>
 
+<tr>
+  <td><strong>Get Outlier</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/outlier.js">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript">
+      kata
+    </a>
+  </td>
+</tr>
+
 </table>
 
 ### Java:
