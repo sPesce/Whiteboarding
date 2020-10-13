@@ -159,6 +159,20 @@ Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars
   </td>
 </tr>
 
+<tr>
+  <td><strong>Duplicate Count</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/duplicateCount.js">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript">
+      kata
+    </a>
+  </td>
+</tr>
+
 </table>
 
 ### Java:
