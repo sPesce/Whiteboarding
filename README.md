@@ -8,6 +8,20 @@ Collection of my CodeWars & LeetCode solutions
 <table>
 
   <tr>
+    <td><strong>Sum of Linked Lists</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/sumLinkedLists.js">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://leetcode.com/problems/add-two-numbers/">
+        LeetCode
+      </a>
+    </td>
+  </tr>
+
+  <tr>
     <td><strong>Expand Number</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/expandedNumberForm.js">
@@ -16,7 +30,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5842df8ccbd22792a4000245/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -30,7 +44,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/554ca54ffa7d91b236000023/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -44,7 +58,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5648b12ce68d9daa6b000099/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -58,7 +72,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/55f2b110f61eb01779000053/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -72,7 +86,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/563b662a59afc2b5120000c6/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -86,7 +100,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/52fba66badcd10859f00097e/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -100,7 +114,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/54da539698b8a2ad76000228/train/javascript">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -114,7 +128,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/546e2562b03326a88e000020/train/javascript">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -128,7 +142,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/550554fd08b86f84fe000a58/solutions/javascript">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -142,7 +156,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/51b6249c4612257ac0000005/train/javascript">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -156,7 +170,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/52449b062fb80683ec000024/train/javascript">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -170,7 +184,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -184,7 +198,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/5526fc09a1bbd946250002dc/train/javascript">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -203,7 +217,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/52f78966747862fc9a0009ae/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -217,7 +231,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5390bac347d09b7da40006f6/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -231,7 +245,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -245,7 +259,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/578aa45ee9fd15ff4600090d">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -259,7 +273,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/56747fd5cb988479af000028/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -273,7 +287,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/51f2d1cafc9c0f745c00037d/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -287,7 +301,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/56269eb78ad2e4ced1000013/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -301,7 +315,7 @@ Collection of my CodeWars & LeetCode solutions
     </td>
     <td>
       <a href="https://www.codewars.com/kata/5679aa472b8f57fb8c000047/train/java">
-        kata
+        CodeWars
       </a>
     </td>
   </tr>
@@ -315,7 +329,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/56606694ec01347ce800001b/train/java">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -328,7 +342,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/545cedaa9943f7fe7b000048/train/java">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
@@ -342,7 +356,7 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/583203e6eb35d7980400002a/train/java">
-      kata
+      CodeWars
     </a>
   </td>
 </tr>
