@@ -1,7 +1,7 @@
 # Whiteboarding
 
 Collection of my CodeWars & LeetCode solutions
-> [My CodeWars Profile](https://www.codewars.com/users/sPesce)
+> [My CodeWars Profile](https://www.codewars.com/users/sPesce) <br/>
 > [My LeetCode Profile](https://leetcode.com/stevepesce879/)
 
 ### Javascript:
