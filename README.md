@@ -10,7 +10,7 @@ Collection of my CodeWars & LeetCode solutions
   <tr>
     <td><strong>Sum of Linked Lists</strong></td>
     <td>
-      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Javascript/sumLinkedLists.js">
+      <a href="https://github.com/sPesce/Whiteboarding/blob/master/Javascript/sumLinkedLIsts.js">
         solution
       </a>
     </td>
