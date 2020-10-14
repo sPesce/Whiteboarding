@@ -1,6 +1,7 @@
-# Code_Wars_Katas
+# Whiteboarding
 
-Collection of my CodeWars solutions | [My CodeWars Profile](https://www.codewars.com/users/sPesce)
+Collection of my CodeWars & LeetCode solutions
+[My CodeWars Profile](https://www.codewars.com/users/sPesce) | [My LeetCode Profile](https://leetcode.com/stevepesce879/)
 
 ### Javascript:
 <table>
