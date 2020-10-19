@@ -48,8 +48,9 @@ public class PaginationHelper<I> {
    * this method should return -1 for itemIndex values that are out of range
    */
   public int pageIndex(int itemIndex) {
-    final int pageNum = itemIndex/this.itemsPerPage;
-    return (pageNum < this.pageCount() && pageNum >= 0) ? pageNum : -1;
+    if(itemIndex >= 0 && itemIndex < this.collection.size())
+      return -1;
+    return itemIndex/this.itemsPerPage;
   }
 
   private int lastPageCount() {
