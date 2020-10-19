@@ -8,5 +8,7 @@ public class App {
         System.out.println("I: " + i + " | Pg: " + helper.pageIndex(i));
       }
 
+      System.out.println(GenerateTableRow.make("Pagination", "solutionUrl", "https://www.codewars.com/kata/515bb423de843ea99400000a/train/java"));
+
     }
 }
