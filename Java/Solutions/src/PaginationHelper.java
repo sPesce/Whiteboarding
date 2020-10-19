@@ -25,9 +25,12 @@ public class PaginationHelper<I> {
    * returns the number of pages
    */
   public int pageCount() {
-    final int items = this.itemCount();
-    final int partialPage = this.lastPageCount() == 0 ? 0 : 1;
-    return ((items / this.itemsPerPage) + partialPage);
+    int pages = this.itemCount() / this.itemsPerPage;
+    
+    if (this.lastPageItemCount() > 0 && this.lastPageItemCount() < this.itemsPerPage)
+      pages++;
+    
+    return pages;
   }
   
   /**
@@ -36,10 +39,13 @@ public class PaginationHelper<I> {
    */
   public int pageItemCount(int pageIndex) {
     final int pages = this.pageCount();
-    if (pageIndex < pages - 1 && pageIndex >= 0)
+    
+    if ((pageIndex >= 0 && pageIndex < pages - 1) || this.lastPageItemCount() == 0 && pageIndex == pages - 1)
       return this.itemsPerPage;
-    if (pageIndex == pages - 1)    
-      return this.lastPageCount();
+    
+    if (pageIndex == pages - 1) 
+      return this.lastPageItemCount();
+    
     return -1;
   }
   
@@ -49,11 +55,14 @@ public class PaginationHelper<I> {
    */
   public int pageIndex(int itemIndex) {
     if(itemIndex >= 0 && itemIndex < this.collection.size())
-      return -1;
-    return itemIndex/this.itemsPerPage;
+      return itemIndex/this.itemsPerPage;
+    return -1;
   }
-
-  private int lastPageCount() {
-    return this.itemCount() % this.itemsPerPage;
+  /*
+  ** Returns # of items on the last page
+  */
+  private int lastPageItemCount() {
+    int remainder =  this.itemCount() % this.itemsPerPage;
+    return remainder == 0 ? this.itemsPerPage : remainder;
   }
 }
