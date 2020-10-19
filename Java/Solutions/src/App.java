@@ -1,6 +1,12 @@
+import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-        System.out.println(GenerateTableRow.make("Duplicate Count","https://github.com/sPesce/Code_Wars_Katas/blob/master/Javascript/duplicateCount.js","https://www.codewars.com/kata/54bf1c2cd5b56cc47f0007a1/train/javascript")); 
+      PaginationHelper<Character> helper = new PaginationHelper(Arrays.asList('a', 'b', 'c', 'd', 'e', 'f'), 4);
+      for(int i = 0; i < 6; i++)
+      {
+        System.out.println("I: " + i + " | Pg: " + helper.pageIndex(i));
+      }
+
     }
 }
