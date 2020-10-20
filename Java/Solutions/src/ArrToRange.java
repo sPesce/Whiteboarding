@@ -5,6 +5,7 @@ class ArrToRange {
   // returns "-6,-3--1,3-5,7-11,14,15,17-20"
   public static String rangeExtraction(int[] arr) 
   {
+    //holds each range segment
     List<String> ranges = new LinkedList<>();
     
     int start;//a of range from a-b
@@ -13,13 +14,13 @@ class ArrToRange {
     
     for(int i = 1; i < arr.length ; i++)
     { 
-      final boolean consecFromPrevious = arr[i] == (arr[i-1] + 1);
-      if ( consecFromPrevious )
+      final boolean consecutive = arr[i] == (arr[i-1] + 1);
+      if ( consecutive )
       {
         end = arr[i];//set new end every time its consecutive
       }
       //is not a consecutive num or is the last element
-      if( !consecFromPrevious || i == arr.length - 1)
+      if( !consecutive || i == arr.length - 1)
       {
         String startStr = Integer.toString(start);
         
