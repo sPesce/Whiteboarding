@@ -50,13 +50,31 @@ public class Interval {
       int sum = 0;
       for(int i = 0 ; i <= jMax ; i++)
       {
-        System.out.println("Adding (" + values[i][1] + " - " + values[i][0] + ") to sum: " + sum);
-        sum += (values[i][1] - values[i][0]); 
+        int a = values[i][0];
+        int b = values[i][1];
+        sum += (b - a);
+        for(int j = 0; j <= jMax ; j++)
+        {
+          int[] other = values[j];
+          if(inRange(a,other,true) || inRange(b,other,true))
+            overlap = true;
+        } 
+      }
+      if(overlap) 
+      {
+        int[][] trimmed = Arrays.copyOfRange(values,0,jMax + 1);
+        return sumIntervals(trimmed);
       }
       return sum; 
     }
 
-    public static boolean inRange(int x, int[] a2d) {return  (x >= a2d[0] && x <= a2d[1]);}
+    public static boolean inRange(int x, int[] a2d, boolean strictly) {
+      if (strictly)
+        return (x > a2d[0] && x < a2d[1]);
+      return  (x >= a2d[0] && x <= a2d[1]);
+    }
+
+    public static boolean inRange(int x, int[] a2d){return inRange(x,a2d,false);}
 
     public static void print2dArr(int[][] a2d,String label){
       System.out.println("----" + label + "----");
