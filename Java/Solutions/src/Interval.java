@@ -1,5 +1,3 @@
-
-
 import java.util.Arrays;
 import java.util.LinkedList;
 
@@ -29,16 +27,16 @@ public class Interval {
             values[j] = new int[] {a,b};
             break;
           }
-          else if( inRange(a, values[j]) && inRange(b,values[j]))
+          else if( (inRange(a, values[j]) && inRange(b,values[j])))//values is in range
             break;
-          //there is an overlap PAST values[j]
-          else if( inRange(a,values[j]) && b > values[j][1]){
+          //there is an overlap PAST values[j] OR values overlaps BEFORE interval
+          else if( inRange(a,values[j]) || inRange(values[j][1],intervals[i])){
             System.out.println("\t[" + values[j][0] + "," + values[j][1] + "] ... b <=== " + b);
             values[j][1] = b;
             break;
           }
-          //there is an overlap BEFORE values[j]
-          else if( inRange(b,values[j]) && a < values[j][0]){
+          //there is an overlap BEFORE values[j] OR values overlaps AFTER interval
+          else if( inRange(b,values[j]) || inRange(values[j][0],intervals[i])){
             System.out.println("\t[" + values[j][0] + "," + values[j][1] + "] ... a <=== " + a);
             values[j][0] = a;
             break;
