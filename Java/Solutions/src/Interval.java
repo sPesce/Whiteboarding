@@ -1,4 +1,4 @@
-package cw;
+
 
 import java.util.Arrays;
 import java.util.LinkedList;
@@ -7,6 +7,7 @@ public class Interval {
 
     public static int sumIntervals(int[][] intervals) {
       if( intervals == null || intervals.length == 0 ) return 0;
+      print2dArr(intervals);
       
       int[][] values = new int[intervals.length][];
       
@@ -14,6 +15,7 @@ public class Interval {
 
       for(int i = 0; i < intervals.length ; i++)
       {
+        
         //a: start of interval, b: end of it
         final int a = intervals[i][0];
         final int b = intervals[i][1];
@@ -21,25 +23,30 @@ public class Interval {
         for(int j = 0; j <= i ; j++)
         {
           jMax = Integer.max(jMax,j);
-          //System.out.println("Values[" + j + "][0] = " + values[j][0]);
-          //System.out.println("Values[" + j + "] length : " + values[j].length);
-          System.out.println("Values: " + values[j]);
           if(values[j] == null)
           {
-            System.out.println("Hit empty");
-            System.out.println("Found empty values, setting " + a + "," + b);
+            System.out.println("\tvalues[" + j +"] is null, setting to: " + a + "," + b);
             values[j] = new int[] {a,b};
             break;
           }
-          //is a between values[j][0] and values[j][1]
-          else if( a >= values[j][0] && a < values[j][1])
-          {
-            if( b > values[j][1]) values[j][1] = b;
+          else if( inRange(a, values[j]) && inRange(b,values[j]))
+            break;
+          //there is an overlap PAST values[j]
+          else if( inRange(a,values[j]) && b > values[j][1]){
+            System.out.println("\t[" + values[j][0] + "," + values[j][1] + "] ... b <=== " + b);
+            values[j][1] = b;
             break;
           }
-        } 
+          //there is an overlap BEFORE values[j]
+          else if( inRange(b,values[j]) && a < values[j][0]){
+            System.out.println("\t[" + values[j][0] + "," + values[j][1] + "] ... a <=== " + a);
+            values[j][0] = a;
+            break;
+          }
+        }
+        print2dArr(values,"Printing values"); 
       }
-      
+      boolean overlap = false;
       int sum = 0;
       for(int i = 0 ; i <= jMax ; i++)
       {
@@ -48,4 +55,17 @@ public class Interval {
       }
       return sum; 
     }
+
+    public static boolean inRange(int x, int[] a2d) {return  (x >= a2d[0] && x <= a2d[1]);}
+
+    public static void print2dArr(int[][] a2d,String label){
+      System.out.println("----" + label + "----");
+      for(int[] a1d: a2d)
+      {
+        if(a1d == null) break;
+        System.out.print(" [" + a1d[0] + "," + a1d[1] + "] ");
+      }
+      System.out.println("\n--------------------");
+    }
+    public static void print2dArr(int[][] a2d) {print2dArr(a2d,"------------");}
 }

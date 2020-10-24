@@ -3,7 +3,7 @@ import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
 
-      TestLambda.printStuff();
+      System.out.println("Returned: " + Interval.sumIntervals(new int[][]{{1, 5}, {10, 20}, {1, 6}, {16, 19}, {5, 11}}));
 
     }
 
