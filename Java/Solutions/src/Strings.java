@@ -44,4 +44,7 @@ public class Strings
  * Runtime: 175 ms, faster than 6.40% of Java online submissions for Longest Substring Without Repeating Characters.
  * Memory Usage: 39.5 MB, less than 8.07% of Java online submissions for Longest Substring Without Repeating Characters.
  * 
+ * --try 2--
+ * Runtime: 158 ms
+ * Memory Usage: 40 MB
 */
