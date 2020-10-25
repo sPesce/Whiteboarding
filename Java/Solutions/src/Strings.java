@@ -8,15 +8,12 @@ public class Strings
     
     if(size < 2) return size;
 
-    int start = 0;
 
     Hashtable<Character,Integer> counter = new Hashtable<>();
     int maxSize = 0;//longest substr length
     
     for(int i = 0; i < size; i++)
     {
-      //if(maxSize > size/2) return maxSize;
-
       char current = s.charAt(i);
       
       if(counter.containsKey(current))
