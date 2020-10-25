@@ -253,13 +253,13 @@ Collection of my CodeWars & LeetCode solutions
   <tr>
     <td><strong>String Largest Substring</strong></td>
     <td>
-      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/Accumul.java">
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/Strings.java">
         solution
       </a>
     </td>
     <td>
-      <a href="https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java">
-        CodeWars
+      <a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/">
+        LeetCode
       </a>
     </td>
   </tr>
