@@ -251,6 +251,20 @@ Collection of my CodeWars & LeetCode solutions
   </tr>
 
   <tr>
+    <td><strong>String Largest Substring</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/Accumul.java">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/5667e8f4e3f572a8f2000039/train/java">
+        CodeWars
+      </a>
+    </td>
+  </tr>
+
+  <tr>
     <td><strong>Sort Odd in Place</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/tree/master/Java/Solutions/src/SortOdd.java">
