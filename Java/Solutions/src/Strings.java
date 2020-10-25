@@ -10,7 +10,7 @@ public class Strings
 
     int start = 0;
 
-    Hashtable<Character,Byte> counter = new Hashtable<>();
+    Hashtable<Character,Integer> counter = new Hashtable<>();
     int maxSize = 0;//longest substr length
     
     for(int i = 0; i < size; i++)
@@ -29,12 +29,12 @@ public class Strings
         }
       }
       else
-        counter.put(current, (byte)i);
+        counter.put(current, i);
     }
     maxSize = newMax(maxSize, counter);
     return maxSize;    
   }
-  public static int newMax(int maxSize, Hashtable<Character,Byte> counter)
+  public static int newMax(int maxSize, Hashtable<Character,Integer> counter)
   {
     int count = counter.size();
     return Integer.max(maxSize,count);
