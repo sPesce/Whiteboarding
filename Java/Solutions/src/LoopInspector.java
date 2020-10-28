@@ -1,7 +1,6 @@
 import java.util.Hashtable;
 //what node class is being imported?
-public class LoopInspector {
-
+public class LoopInspector {  
   public int loopSize(Node node) {
     Hashtable<Node, Integer> nodeMap = new Hashtable<>();    
     
