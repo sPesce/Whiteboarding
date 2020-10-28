@@ -1,22 +1,18 @@
 import java.util.Hashtable;
-
-import org.w3c.dom.Node;
-
-
+//what node class is being imported?
 public class LoopInspector {
 
   public int loopSize(Node node) {
-    Hashtable<Node, Integer> nodeMap = new Hashtable<>();
-    int count = 0;
+    Hashtable<Node, Integer> nodeMap = new Hashtable<>();    
+    
     Node current = node;
-    while(!nodeMap.containsKey(current))
-    {
-      count++;
-      
-      nodeMap.put(current,count);
-      current = current.getNext();
-    }
-    return (nodeMap.size() - nodeMap.get(current) + 1);
-  }
 
+    for(int i = 0; !nodeMap.containsKey(current) ; i++)
+    {
+      nodeMap.put(current,i);
+      current = current.getNext();
+    } 
+
+    return nodeMap.size() - nodeMap.get(current);
+  }
 }
