@@ -1,14 +1,28 @@
 function getPINs(observed) {
-  const possible = [];
-
+  possibleDigits = [];
   observed.split("").forEach(char => {
     const digit = parseInt(char);
-    possible.push( variations(digit) )
+    possibleDigits.push( variations(digit) )
   });
 
-  possible.forEach(x => console.log(x));
+  let possibleCodes = new Set();
 
+  const permute = (arrayOfArrays, whichArray=0, output="") => {
+
+    arrayOfArrays[whichArray].forEach((array_element)=>{
+        if( whichArray == possibleDigits.length - 1 ){
+            possibleCodes.add( output + array_element );
+        }
+        else{
+            permute(arrayOfArrays, whichArray+1, output + array_element );
+        }
+    });
+  }
+  permute(possibleDigits);
+  return [...possibleCodes];
 }
+
+
 
 const add2dVector = (vec1,vec2) =>
 {
