@@ -1,7 +1,7 @@
 function getPINs(observed) {
   possibleDigits = [];
   observed.split("").forEach(char => {
-    const digit = parseInt(char);
+    const digit = char | 0;
     possibleDigits.push( variations(digit) )
   });
 
