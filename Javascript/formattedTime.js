@@ -1,16 +1,8 @@
-function humanReadable(seconds) {
-  const hours = Math.floor(seconds / 3600);
-  seconds -= hours * 3600;
-  
-  const minutes = Math.floor(seconds/60);
-  seconds -= minutes * 60;
-  
-  return [hours,minutes,seconds].map(num => format(num))
-  .join(":");
+function humanReadable(seconds, time = [], base = 3600) {
+  if (time.length < 3)     
+    return humanReadable( seconds % base , [...time,format(Math.floor(seconds / base))] , base/60 );     
+   
+  return time.join(":");//base case
 }
 
-const format = num => {
-  if(num < 10)
-    return '0' + num;
-  return num
-}
+const format = num => num < 10 ? '0' + num : num;
