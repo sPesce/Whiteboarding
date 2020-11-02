@@ -6,10 +6,8 @@ function incrementString (strng) {
   if(!!numberStr && numberStr.startsWith('0'))
   {
     const [,zeroesStr,num] = numberStr.split(/(^0+)/);
-    zeroCount = zeroesStr.length;
-    (!num || count % 10 === 0) && zeroCount--;    
-  }
-  
+    zeroCount = zeroesStr.length - (!num || count % 10 === 0);    
+  }  
   
   return inpStr + '0'.repeat(zeroCount) + count;
 }
