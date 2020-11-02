@@ -1,17 +1,17 @@
 function incrementString (strng) {
   const [inpStr,numberStr,] = strng.split(/(\d+$)/);
-  if(numberStr === undefined)
-    return inpStr + "1";
+  let count = !!numberStr ? parseInt(numberStr) + 1 : 1;
+  let zeroCount = 0; 
 
-  const count = parseInt( numberStr ) + 1;
-
-  if(!numberStr.startsWith('0')) 
-    return inpStr + count;
-
-  const [,zeroesStr,num] = numberStr.split(/(^0+)/);
-  let zeroCount = zeroesStr.length;
-  if(!num || count % 10 === 0)
-    zeroCount--; 
+  if(!!numberStr && numberStr.startsWith('0'))
+  {
+    const [,zeroesStr,num] = numberStr.split(/(^0+)/);
+    zeroCount = zeroesStr.length;
+    (!num || count % 10 === 0) && zeroCount--;    
+  }
+  
   
   return inpStr + '0'.repeat(zeroCount) + count;
 }
+
+//https://www.codewars.com/kata/54a91a4883a7de5d7800009c/train/javascript
