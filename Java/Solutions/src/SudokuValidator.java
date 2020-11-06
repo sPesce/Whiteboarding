@@ -10,6 +10,8 @@ public class SudokuValidator {
         Set<Integer> vertical = new HashSet<Integer>();     
         for(int col = 0; col < 9; col++)
         {
+          if (sudoku[row][col] < 1 || sudoku[row][col] > 9)
+            return false;
           horizontal.add(sudoku[row][col]);
           vertical.add(sudoku[col][row]);
           
@@ -22,24 +24,13 @@ public class SudokuValidator {
                 square.add(sudoku[i][j]);
             }
             if(square.size() < 9 )
-            {
-              System.out.println("Failed square set size test:");
-              System.out.println("\tSquare: " + square.size());
-              System.out.println(square.toString());
-              System.out.println("\tSquare top corner: (" + row + "," + col + ")");
-              valid = false;
-            } 
+              return false;
           }          
         }
         if(horizontal.size() < 9 || vertical.size() < 9)
-        {
-          System.out.println("Failed set size test: ");
-          System.out.println("\tVertical: " + vertical.size());
-          System.out.println("\tHorizontal: " + horizontal.size());
-          valid = false;
-        }
+          return false;
       }
-      return valid;
+      return true;
   }
   
 }
