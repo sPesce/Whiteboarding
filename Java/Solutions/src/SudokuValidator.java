@@ -3,7 +3,6 @@ import java.util.Set;
 
 public class SudokuValidator {
   public static boolean check(int[][] sudoku) {
-    boolean valid = true;
       for(int row = 0; row < 9; row++)
       {
         Set<Integer> horizontal = new HashSet<Integer>();     
@@ -12,6 +11,7 @@ public class SudokuValidator {
         {
           if (sudoku[row][col] < 1 || sudoku[row][col] > 9)
             return false;
+
           horizontal.add(sudoku[row][col]);
           vertical.add(sudoku[col][row]);
           
@@ -23,11 +23,12 @@ public class SudokuValidator {
               for(int j = col; j <= col + 2; j ++)
                 square.add(sudoku[i][j]);
             }
+            
             if(square.size() < 9 )
-              return false;
+              return false;//square does not have numbers 1-9
           }          
         }
-        if(horizontal.size() < 9 || vertical.size() < 9)
+        if(horizontal.size() < 9 || vertical.size() < 9)//row or column does not have 1-9
           return false;
       }
       return true;
