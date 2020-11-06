@@ -374,6 +374,7 @@ Collection of my CodeWars & LeetCode solutions
     </a>
   </td>
 </tr>
+
 <tr>
   <td><strong>Pagination</strong></td>
   <td>
@@ -383,6 +384,20 @@ Collection of my CodeWars & LeetCode solutions
   </td>
   <td>
     <a href="https://www.codewars.com/kata/515bb423de843ea99400000a/train/java">
+      CodeWars
+    </a>
+  </td>
+</tr>
+
+<tr>
+  <td><strong>Greed Dice Game</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/Greed.java">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/5270d0d18625160ada0000e4/train/java">
       CodeWars
     </a>
   </td>
