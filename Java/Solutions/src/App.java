@@ -3,7 +3,7 @@ import java.util.*;
 public class App {
     public static void main(String[] args) throws Exception {
 
-      System.out.println(Strings.lengthOfLongestSubstring("dvdf123d5678") );
+      System.out.println(Greed.greedy(new int[] {1,1,1,3,1}) );
 
     }
 
