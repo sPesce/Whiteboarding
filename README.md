@@ -402,5 +402,19 @@ Collection of my CodeWars & LeetCode solutions
     </a>
   </td>
 </tr>
+
+<tr>
+  <td><strong>Sudoku Validator</strong></td>
+  <td>
+    <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/SudokuValidator.java">
+      solution
+    </a>
+  </td>
+  <td>
+    <a href="https://www.codewars.com/kata/529bf0e9bdf7657179000008/train/java">
+      CodeWars
+    </a>
+  </td>
+</tr>
     
 </table>
