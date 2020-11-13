@@ -1,28 +1,28 @@
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Map;
+
 public class Hamming {
 
-	public static long hamming(int n) {
-    if( n <= 6) return (long)n;
+public static long hamming(int n) {
+  ArrayList<Long> h2,h3,h5,hammings;
+  h2 = new ArrayList<Long>();
+  h3 = new ArrayList<Long>();
+  h5 = new ArrayList<Long>();
+  hammings = new ArrayList<Long>();
 
-    int currentN = 7;
-    long currentHam = 7;
-    
-    while(currentN <= n)
-    {
-      if(isHam(currentHam))      
-        currentN++;
-      
-      currentHam++;      
-    }
-    return currentHam - 1;
+  hammings.add(0L); hammings.add(1L);
+  h2.add(1L); h2.add(2L);
+  h3.add(1L); h3.add(3L);
+  h5.add(1L); h5.add(5L);
+  
+  if(hammings.size() > n) return hamming(n);
+  
+  hammings.add(Math.min(h2.))
+
+
+  
   }
-  private static boolean isHam(long x) {
-    long reduced = x;
-    int[] factors = {5,3,2};
-    for(int factor : factors)
-    {
-      while(reduced % factor == 0)
-        reduced /= factor;
-    }
-    return reduced == 1;    
-  } 
 }
