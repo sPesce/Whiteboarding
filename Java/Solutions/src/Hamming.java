@@ -1,27 +1,28 @@
-import java.util.HashMap;
-import java.util.HashSet;
-import java.util.Map;
-import java.util.Set;
-
 public class Hamming {
 
 	public static long hamming(int n) {
     if( n <= 6) return (long)n;
 
-    for(int i = 1; i <= 6; hams.put(i,(long)i++));
-    for(int i = 1; i < n;
+    int currentN = 7;
+    long currentHam = 7;
     
-    Map<Integer,Long> hams = new HashMap<Integer,Long>();
- i++)
+    while(currentN <= n)
     {
-      if(i <= 6)
-        hams.put(i,(long)i);
-      else
-      {
-
-      }
+      if(isHam(currentHam))      
+        currentN++;
+      
+      currentHam++;      
     }
-
-    return -1;
-  }  
+    return currentHam - 1;
+  }
+  private static boolean isHam(long x) {
+    long reduced = x;
+    int[] factors = {5,3,2};
+    for(int factor : factors)
+    {
+      while(reduced % factor == 0)
+        reduced /= factor;
+    }
+    return reduced == 1;    
+  } 
 }
