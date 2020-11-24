@@ -209,6 +209,32 @@ Collection of my CodeWars & LeetCode solutions
 <table>
   
   <tr>
+    <td><strong>Factorial Calculator (Big Int Banned)</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/FactorialCalc.java">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="<tr>
+    <td><strong>Reverse Polish Notation Calc.</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/RPN.java">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/52f78966747862fc9a0009ae/train/java">
+        CodeWars
+      </a>
+    </td>
+  </tr>">
+        CodeWars
+      </a>
+    </td>
+  </tr>
+  
+  <tr>
     <td><strong>Reverse Polish Notation Calc.</strong></td>
     <td>
       <a href="https://github.com/sPesce/Code_Wars_Katas/blob/master/Java/Solutions/src/RPN.java">
