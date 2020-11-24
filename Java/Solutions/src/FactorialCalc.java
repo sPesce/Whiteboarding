@@ -14,18 +14,13 @@ public class FactorialCalc {
         final int mult = Character.getNumericValue(digits[j]) * i + overflow;
         stack.push( Character.forDigit(mult % 10,10) );
         overflow = mult / 10;
-        if(i == 15)
-          System.out.println("Break");
-
       }  
 
       StringBuilder sb = new StringBuilder();
-      while(!stack.isEmpty())
-      {
+      while(!stack.isEmpty())      
         sb.append(stack.pop());
-      }
+      //overflow added to the front if it exists
       num = (overflow == 0 ? "" : Integer.toString(overflow)) + sb.toString();
-      System.out.println("Fac(" + i + "): " + num);
     }
     return num;
   }
