@@ -1,11 +1,8 @@
 public class FactorialCalc {
   public static String Factorial(int n) {
-    String num = "1";
-    for(int i = 1; i <= n; i++)
-    {
-      num = multiply(i,num);
-    }
-    return num;
+    if(n == 1) return "1";
+
+    return multiply(n, Factorial(n-1));
   }
   private static String multiply(int x, String num)
   {      
