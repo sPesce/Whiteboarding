@@ -17,16 +17,14 @@ public class FactorialCalc {
         if(i == 15)
           System.out.println("Break");
 
-      }
-      if (overflow != 0)
-        stack.push(Character.forDigit(overflow,10));
+      }  
 
       StringBuilder sb = new StringBuilder();
       while(!stack.isEmpty())
       {
         sb.append(stack.pop());
       }
-      num = sb.toString();
+      num = (overflow == 0 ? "" : Integer.toString(overflow)) + sb.toString();
       System.out.println("Fac(" + i + "): " + num);
     }
     return num;
