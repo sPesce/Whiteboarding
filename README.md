@@ -221,7 +221,7 @@ Collection of my CodeWars & LeetCode solutions
       </a>
     </td>
   </tr>
-
+  
   <tr>
     <td><strong>Reverse Polish Notation Calc.</strong></td>
     <td>
