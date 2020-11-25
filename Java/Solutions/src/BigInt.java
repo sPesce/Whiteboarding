@@ -1,8 +1,14 @@
+/**
+ * Created by Steve Pesce 11/25/2020
+ * BigInt class for Large numbers
+ * Currently only supports positive numbers
+ * **/
 public class BigInt implements Comparable<BigInt>{
   
   private String value;
   
   BigInt(int value) {
+    if( value < 0) System.out.println("Caution: negative numbers not currently implemented");
     this.value = Integer.toString(value);
   }
   BigInt(String value){
@@ -68,7 +74,7 @@ public class BigInt implements Comparable<BigInt>{
     return new String[] {xVal,yVal};
   }
 
-  public void add(BigInt x)
+  public String plus(BigInt x)
   {
     String[] xy = equalLengths(x, this);
     char[] xChars = xy[0].toCharArray();
@@ -87,9 +93,45 @@ public class BigInt implements Comparable<BigInt>{
       overflow = digitSum / 10;      
     }
 
-    this.value = (overflow == 0 ? "" : "1") + solution.reverse().toString();
-
+    return this.value = (overflow == 0 ? "" : "1") + solution.reverse().toString();
   }
+
+  public String minus(BigInt x){
+    int thisGThanX = this.compareTo(x);
+    if (thisGThanX == 0)//numbers are equal, diff is zero
+      return value = "0";
+    else if(thisGThanX < 0)//diff would be negative
+      return value = ("ERROR, negative not implemented");
+    
+      String[] xThis = equalLengths(x, this);
+      char[] xChars = xThis[0].toCharArray();
+      char[] thisChars = xThis[1].toCharArray();
+      
+      int overflow = 0;
+      StringBuilder difference = new StringBuilder();
+      for(int i = xChars.length - 1 ; i >= 0 ; i--)//subtraction happens in reverse order
+      {
+        int xInt = Character.getNumericValue(xChars[i]);
+        int thisInt = Character.getNumericValue(thisChars[i]) + overflow;
+        overflow = 0;//either 0 or -1, -1 when you need to take a 1 from the next 10s place up
+
+        if(thisInt < xInt)
+        {
+          overflow = -1;
+          thisInt += 10;
+        }
+
+        difference.append(thisInt - xInt);        
+      }
+      //trim zeroes
+      //note the string builder is in reverse order, so leading zeroes are now at the end
+      while(difference.charAt(difference.length() - 1) == '0')
+        difference.deleteCharAt(difference.length() - 1);
+
+      return value = difference.reverse().toString();
+    }
+
+  
 
   
 }
