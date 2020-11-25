@@ -1,4 +1,5 @@
-public class BigInt {
+public class BigInt implements Comparable<BigInt>{
+  
   private String value;
   
   BigInt(int value) {
@@ -7,6 +8,28 @@ public class BigInt {
   BigInt(String value){
    this.value = value; 
   }
+
+  @Override
+  public int compareTo(BigInt x){
+    if(this.length() > x.length())
+      return 1;
+    if(this.length() < x.length())
+      return -1;
+    
+    char[] thisChars = this.chars();
+    char[] xChars = x.chars();
+
+    for(int i = 0; i < this.length() ; i++)
+    {
+      int xInt = Character.getNumericValue(xChars[i]);
+      int thisInt = Character.getNumericValue(thisChars[i]);
+      
+      if(thisInt > xInt) return 1;
+      if(thisInt < xInt) return -1;
+    }
+    return 0;
+  }
+
   public String getValue () {
     return value;
   }
@@ -67,6 +90,8 @@ public class BigInt {
     this.value = (overflow == 0 ? "" : "1") + solution.reverse().toString();
 
   }
+
+  
 }
 
 
