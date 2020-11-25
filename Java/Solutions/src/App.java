@@ -2,6 +2,16 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
+      testDivide();
+    }
+    private static void testDivide() {
+      final int dividend = 21;
+      final int divisor = 7;
+      BigInt bi = new BigInt(dividend);
+      bi.divideBy(divisor);
+      System.out.println(dividend + " / " + divisor + " == " + bi.getValue());
+    }
+    private void testPowers() {
       System.out.println("----- Powers of 2 -----");
       for(int i = 0; i < 15 ; i++)
       {

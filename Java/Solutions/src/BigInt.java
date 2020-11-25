@@ -145,10 +145,12 @@ public class BigInt implements Comparable<BigInt>{
     } 
   }
 
+  //make a deep copy by value
   public BigInt clone(){
     return new BigInt(this.getValue());
   }
 
+  //'this' to the power of (exp)
   public void power(int exp)
   {
     BigInt clone = this.clone();
@@ -179,11 +181,26 @@ public class BigInt implements Comparable<BigInt>{
     
     //num loses last char, overflow calculated from product
     return multiplyByInt(x, num.substring(0, num.length() - 1), powerOf10, product / 10 , sb);
-  } 
+  }
+  //divide by and set to new value
+  public void divideBy(int divisor) {
+    StringBuilder quotient = new StringBuilder();
 
-  
+    char[] dividend = this.chars();
 
-  
+    int overflow = 0;
+
+    for(int i = 0; i < dividend.length ; i++)
+    {
+      int digit = overflow * 10 + Character.getNumericValue(dividend[i]);
+      quotient.append(digit / divisor);
+      overflow = digit % divisor;
+    }
+    // //trim zeroes
+    while(quotient.charAt(0) == '0')
+      quotient.deleteCharAt(0);
+    this.setValue(quotient.toString());
+  }
 }
 
 
