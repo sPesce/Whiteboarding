@@ -24,15 +24,47 @@ public class BigInt {
     return value.length();
   }
   
+  //return two numbers as Strings of the same length (adds zeroes to front if shorter than other)
+  private static String[] equalLengths(BigInt x, BigInt y){
+    String yVal;
+    String xVal;
+
+    if(x.length() == y.length()){
+      yVal = y.getValue();
+      xVal = x.getValue();
+    } else if(x.length() > y.length())
+    {
+      xVal = x.getValue();
+      yVal =  "0".repeat(x.length() - y.length()) + y.getValue();
+    } else
+    {
+      yVal = y.getValue();
+      xVal = "0".repeat(y.length() - x.length()) + x.getValue();
+    }
+
+    return new String[] {xVal,yVal};
+  }
+
   public void add(BigInt x)
   {
-    int longest = Integer.max(x.length(),this.length());
+    String[] xy = equalLengths(x, this);
+    char[] xChars = xy[0].toCharArray();
+    char[] yChars = xy[1].toCharArray();
+
     int overflow = 0;
     
-    for(int i = 0; i < longest; i++)
+    StringBuilder solution = new StringBuilder();
+    for(int i = xChars.length - 1; i >= 0 ; i--)
     {
-      int a = 
+      int xInt = Character.getNumericValue(xChars[i]);
+      int yInt = Character.getNumericValue(yChars[i]);
+      int digitSum = xInt + yInt + overflow;
+
+      solution.append( digitSum % 10);
+      overflow = digitSum / 10;      
     }
+
+    this.value = (overflow == 0 ? "" : "1") + solution.reverse().toString();
 
   }
 }

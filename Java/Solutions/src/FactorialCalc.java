@@ -13,7 +13,7 @@ public class FactorialCalc {
     //add last digit * x to string builder
     final char digit = num.toCharArray()[num.length() - 1];
     final int product = Character.getNumericValue(digit) * x + overflow;
-    sb.append(Character.forDigit(product % 10, 10));
+    sb.append(product % 10);
     
     //num loses last char, overflow calculated from product
     return multiply(x, num.substring(0, num.length() - 1), product / 10 , sb);
