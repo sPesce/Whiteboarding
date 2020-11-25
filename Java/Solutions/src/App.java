@@ -2,11 +2,10 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-     // BigInt myInt = new BigInt(FactorialCalc.Factorial(10));
-     // System.out.println("Created Big Int " + myInt.getValue());
-    
-      //System.out.println("x - x: " + myInt.minus(myInt));
-
+      BigInt[] bi = {new BigInt(11), new BigInt(33)};
+      System.out.println("11 x 33 : " + bi[0].times(bi[1]) );
+    }
+    private void testAddition(){
       int[] nums = {100,50,30,22,11,7};
       for(int i = 0 ; i < 3 ; i += 2)
       {
@@ -15,7 +14,6 @@ public class App {
         System.out.println(bInt[0].getValue() + " - " + bInt[1].getValue() + " = " + bInt[0].minus(bInt[1]));
       }
     }
-
     private void testFactCalc(int n){
       String answer = FactorialCalc.Factorial(n);
       System.out.println("Length of String: " + answer.length());
