@@ -2,10 +2,13 @@ import java.util.*;
 
 public class App {
     public static void main(String[] args) throws Exception {
-      BigInt f10 = new BigInt(FactorialCalc.Factorial(10));
-      f10.times(new BigInt(11));
-      BigInt f11 = new BigInt(FactorialCalc.Factorial(11));
-      System.out.println("fac(10) * 11 == fac(11) : " + f11.compareTo(f10));
+      System.out.println("----- Powers of 2 -----");
+      for(int i = 0; i < 15 ; i++)
+      {
+        BigInt base2 = new BigInt("2");
+        base2.power(i);
+        System.out.println(i + ": " + base2.getValue() );
+      }
     }
     private void testAddition(){
       int[] nums = {100,50,30,22,11,7};
@@ -21,6 +24,12 @@ public class App {
       System.out.println("Length of String: " + answer.length());
       System.out.println("fac("+n+"):");
       System.out.println(answer);
+    }
+    private void testTimes() {
+      BigInt f10 = new BigInt(FactorialCalc.Factorial(10));
+      f10.times(new BigInt(11));
+      BigInt f11 = new BigInt(FactorialCalc.Factorial(11));
+      System.out.println("fac(10) * 11 == fac(11) : " + f11.compareTo(f10));
     }
 
   }

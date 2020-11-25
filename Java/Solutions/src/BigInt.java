@@ -145,6 +145,19 @@ public class BigInt implements Comparable<BigInt>{
     } 
   }
 
+  public BigInt clone(){
+    return new BigInt(this.getValue());
+  }
+
+  public void power(int exp)
+  {
+    BigInt clone = this.clone();
+    this.setValue(1);
+    
+    for(int i = 1; i <= exp ; i++)
+      this.times(clone); 
+  }
+
   private static String multiplyByInt(int x, String num, int powerOf10) {
     return multiplyByInt(x, num, powerOf10, 0 , new StringBuilder());
   }
