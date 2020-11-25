@@ -74,7 +74,7 @@ public class BigInt implements Comparable<BigInt>{
     return new String[] {xVal,yVal};
   }
 
-  public String plus(BigInt x)
+  public void plus(BigInt x)
   {
     String[] xy = equalLengths(x, this);
     char[] xChars = xy[0].toCharArray();
@@ -93,16 +93,17 @@ public class BigInt implements Comparable<BigInt>{
       overflow = digitSum / 10;      
     }
 
-    return this.value = (overflow == 0 ? "" : "1") + solution.reverse().toString();
+    this.value = (overflow == 0 ? "" : "1") + solution.reverse().toString();
   }
 
-  public String minus(BigInt x){
+  public void minus(BigInt x){
     int thisGThanX = this.compareTo(x);
     if (thisGThanX == 0)//numbers are equal, diff is zero
-      return value = "0";
+      this.setValue("0");
     else if(thisGThanX < 0)//diff would be negative
-      return value = ("ERROR, negative not implemented");
-    
+      this.setValue("ERROR, negative not implemented");
+    else
+    {    
       String[] xThis = equalLengths(x, this);
       char[] xChars = xThis[0].toCharArray();
       char[] thisChars = xThis[1].toCharArray();
@@ -128,25 +129,20 @@ public class BigInt implements Comparable<BigInt>{
       while(difference.charAt(difference.length() - 1) == '0')
         difference.deleteCharAt(difference.length() - 1);
 
-      return value = difference.reverse().toString();
+      this.setValue(difference.reverse().toString());
     }
+  }
 
-    public String times(BigInt x) {
-      char[] xChars = x.chars();
-      String num = this.getValue();
-      this.setValue(0);
-      
-      for(int i = 0; i < x.length(); i++)
-      {
-        int digit = Character.getNumericValue(xChars[xChars.length - 1 - i]);
-        this.plus(new BigInt(multiplyByInt(digit, num, i)));
-      }
-      return this.getValue();      
-    }
-
-  private static String multiplyByInt(int x, String num)
-  {
-    return multiplyByInt(x,num,0);
+  public void times(BigInt x) {
+    char[] xChars = x.chars();
+    String num = this.getValue();
+    this.setValue(0);
+    
+    for(int i = 0; i < x.length(); i++)
+    {
+      int digit = Character.getNumericValue(xChars[xChars.length - 1 - i]);
+      this.plus(new BigInt(multiplyByInt(digit, num, i)));
+    } 
   }
 
   private static String multiplyByInt(int x, String num, int powerOf10) {
