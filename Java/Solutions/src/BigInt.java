@@ -201,6 +201,15 @@ public class BigInt implements Comparable<BigInt>{
       quotient.deleteCharAt(0);
     this.setValue(quotient.toString());
   }
+  //TODO: This was used in something that returns a string, but BigInt mutates the string value instead
+  // how to fix?
+  // private static String Factorial(int n) {
+  //   //recursively call this method, which calls recursive multiply method
+  //   if(n > 1) return multiply(n, Factorial(n-1),0,new StringBuilder());
+  //   return "1";
+  // }
 }
+
+
 
 
