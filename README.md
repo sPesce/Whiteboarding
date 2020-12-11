@@ -432,3 +432,22 @@ Collection of my CodeWars & LeetCode solutions
 </tr>
     
 </table>
+
+### Ruby:
+<table>
+
+  <tr>
+    <td><strong># of Cakes Possible</strong></td>
+    <td>
+      <a href="https://github.com/sPesce/Whiteboarding/blob/master/Ruby/cake.rb">
+        solution
+      </a>
+    </td>
+    <td>
+      <a href="https://www.codewars.com/kata/525c65e51bf619685c000059/train/ruby">
+        CodeWars
+      </a>
+    </td>
+  </tr>
+
+</table>
