@@ -1,8 +1,7 @@
 def cakes(recipe, available)
   possible = []
-  available.map do |k,v|
-    return 0 if !recipe[k]
-    v / recipe[k]
-  end.min()
-  
+  recipe.map do |k,v|
+    return 0 if !available[k]
+    available[k] / v
+  end.min()  
 end
